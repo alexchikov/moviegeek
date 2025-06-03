@@ -64,7 +64,7 @@ def load_data():
 
 class LdaModel(object):
 
-    def __init__(self, min_sim=0.01):
+    def __init__(self, min_sim=0.1):
         self.dirname, self.filename = os.path.split(os.path.abspath(__file__))
         self.min_sim = min_sim
         self.db = settings.DATABASES['default']['ENGINE']
